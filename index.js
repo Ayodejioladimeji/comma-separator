@@ -8,6 +8,10 @@ const removeNum = (num) => {
   return num.toString().replace(/[^0-9]/g, "");
 };
 
+const calculate = (data) => {
+  return addCommas(removeNum(data));
+};
+
 module.exports = {
   // The convert section
   convert: function (num) {
@@ -27,9 +31,8 @@ module.exports = {
     }
   },
 
-  // The calculate function
-  addcomma: function (data) {
-    return addCommas(removeNum(data));
+  addCommas: function (num) {
+    return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
   },
 
   // The Remove function
