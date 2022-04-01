@@ -1,0 +1,32 @@
+{
+  "name": "comma-separator",
+  "version": "1.0.0",
+  "description": "A package for separating numbers in hundreds, thousands, millions, billions and trillions and converts long numbers to readable strings",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ayodejioladimeji/comma-separator.git"
+  },
+  "keywords": [
+    "comma-separator",
+    "comma",
+    "separator",
+    "thousand-separator",
+    "thousands",
+    "separator",
+    "millions",
+    "billions",
+    "trillions",
+    "format",
+    "numbers"
+  ],
+  "author": "Layobright",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Ayodejioladimeji/comma-separator/issues"
+  },
+  "homepage": "https://github.com/Ayodejioladimeji/comma-separator#readme"
+}
