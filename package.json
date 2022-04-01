@@ -1,6 +1,6 @@
 {
   "name": "comma-separator",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A package for separating numbers in hundreds, thousands, millions, billions and trillions and converts long numbers to readable strings",
   "main": "index.js",
   "scripts": {
