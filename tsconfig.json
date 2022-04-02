@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "experimentalDecorators": true,
+    "allowJs": true,
+    "target": "es5",
+    "declaration": true,
+    "outDir": "lib"
+  },
+  "include": ["src"]
+}
