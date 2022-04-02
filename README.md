@@ -71,7 +71,7 @@ strictAddComma("1000 thousand naira"); // "1,000"
 ### strict remove comma from numbers
 
 ```js
-const { removeComma } = require("comma-separator");
+const { strictRemoveComma } = require("comma-separator");
 
 strictRemoveComma("5,000,000"); // 5000000
 strictRemoveComma("-10,000"); // 10000
