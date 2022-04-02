@@ -37,6 +37,8 @@ addComma(-1000); // "-1,000"
 
 addComma(1000.12); // "1,000.12"
 addComma(-1000.12); // "-1,000.12"
+
+addComma("-200000000M"); // "-200,000,000M"
 ```
 
 ### Remove comma from numbers
@@ -66,6 +68,8 @@ strictAddComma(-10000000); // "10,000,000"
 strictAddComma("10000000M"); // "10,000,000"
 
 strictAddComma("1000 thousand naira"); // "1,000"
+
+strictAddComma("-200000000M"); // "200,000,000"
 ```
 
 ### strict remove comma from numbers
@@ -81,6 +85,8 @@ strictRemoveComma("-1,000"); // 1000
 
 strictRemoveComma("1,000Thousand"); // 1000
 strictRemoveComma("-100,000,000 Millions"); // 100000000
+
+strictRemoveComma("-20.00,000,000Millions"); // 2000000000
 ```
 
 ### Convert Long numbers to readable strings
