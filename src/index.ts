@@ -28,22 +28,22 @@ module.exports = {
   },
 
   // The Strict add function
-  strictAddComma: function (data: any) {
+  strictAddComma: function (data: number | string) {
     return addCommas(removeNum(data));
   },
 
   // The Add Comma function
-  addComma: function (num: any) {
+  addComma: function (num: number) {
     return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
   },
 
   // The Remove Comma function
-  removeComma: function (num: any) {
+  removeComma: function (num: string) {
     return parseInt(num.toString().replace(/\,/g, ""));
   },
 
   // The Strict Remove function
-  strictRemoveComma: function (num: any) {
+  strictRemoveComma: function (num: string) {
     return parseInt(num.toString().replace(/[^0-9]/g, ""));
   },
 };
