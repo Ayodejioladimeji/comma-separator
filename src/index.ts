@@ -1,11 +1,19 @@
 // The Add commas function
-const addCommas = (num: any) => {
-  return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+const add = (num: number | string) => {
+  if (typeof num === "string") {
+    return num?.replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+  } else {
+    return num?.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+  }
 };
 
 // Remove Non Numeric function
-const removeNum = (num: any) => {
-  return num.toString().replace(/[^0-9]/g, "");
+const removeNum = (num: number | string) => {
+  if (typeof num === "string") {
+    return num?.replace(/[^0-9]/g, "");
+  } else {
+    return num?.toString().replace(/[^0-9]/g, "");
+  }
 };
 
 module.exports = {
@@ -29,21 +37,33 @@ module.exports = {
 
   // The Strict add function
   strictAddComma: function (data: number | string) {
-    return addCommas(removeNum(data));
+    return add(removeNum(data));
   },
 
   // The Add Comma function
-  addComma: function (num: number) {
-    return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+  addComma: function (num: string | number) {
+    if (typeof num === "string") {
+      return num?.replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    } else {
+      return num?.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    }
   },
 
   // The Remove Comma function
-  removeComma: function (num: string) {
-    return parseInt(num.toString().replace(/\,/g, ""));
+  removeComma: function (num: string | number) {
+    if (typeof num === "string") {
+      return parseInt(num?.replace(/\,/g, ""));
+    } else {
+      return parseInt(num?.toString().replace(/\,/g, ""));
+    }
   },
 
   // The Strict Remove function
-  strictRemoveComma: function (num: string) {
-    return parseInt(num.toString().replace(/[^0-9]/g, ""));
+  strictRemoveComma: function (num: string | number) {
+    if (typeof num === "string") {
+      return parseInt(num?.replace(/[^0-9]/g, ""));
+    } else {
+      return parseInt(num?.toString().replace(/[^0-9]/g, ""));
+    }
   },
 };
